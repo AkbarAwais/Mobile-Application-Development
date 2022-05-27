@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4C44C"
+    tools:context=".Febonacci">
+
+    <EditText
+        android:id="@+id/febonum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Enter a Number:"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/resultfebo"
+        android:layout_width="264dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="56dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/febonum"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="240dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:text="FEBONACCI SERIES"
+        android:textAlignment="center"
+        android:textColor="#532222"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#E44F4F"
+        android:text="Submit"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/resultfebo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/febonum"
+        app:layout_constraintVertical_bias="0.367" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
